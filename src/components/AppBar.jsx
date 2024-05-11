@@ -8,7 +8,9 @@ export default function AppBar({signer, setSigner, isWalletConnected}){
 
 
     return <div className='flex justify-between items-center p-4'>
-        <div className='text-3xl'>Bar</div>
+        <div className='text-3xl'>
+            <a href={'/'}>Bar</a>
+        </div>
         <div className='flex gap-4 items-center'>
             <a href={'/projects'} className='text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-xl text-sm px-5 py-2.5 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700'>projects</a>
             <div>
