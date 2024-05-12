@@ -6,6 +6,7 @@ import ProjectGallery from './PhotoGallery.jsx';
 import CreateProject from './CreateProject.jsx';
 import './App.css'
 import ParentComponent from './ParentComponent.jsx';
+import NewApp from './NewApp.jsx';
 
 function App() {
 
@@ -33,11 +34,12 @@ function App() {
     <AppBar signer={signer} setSigner={setSigner} isWalletConnected={isWalletConnected}/>
     <BrowserRouter>
       <Routes>
-        <Route path={'/'} element={<ParentComponent/>}/>
+        <Route path={'/'} element={<NewApp/>}/>
         <Route path={'/projects'} element={<ProjectGallery/>}/>
         <Route path={'/create-project'} element={<CreateProject/>}/>
       </Routes>
     </BrowserRouter> 
+
   </div>
 }
 
