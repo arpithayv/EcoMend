@@ -1,0 +1,84 @@
+/* CreateProject.css */
+
+.slide {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .textbox {
+    /* Adjusted width to accommodate padding and border */
+    width: 75%;
+    height: 6em; /* 4 rows */
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: both; /* Allow resizing horizontally and vertically */
+    overflow: auto; /* Show scrollbars when content overflows */
+    font-family: inherit; /* Use the same font as the surrounding text */
+    font-size: 16px; /* Adjust font size if needed */
+  }
+  
+  h1 {
+    text-align: left; /* Align heading to the left */
+    margin-left: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    text-align: left; /* Align subheadings to the left */
+    margin-left: 20px;
+  }
+  
+  label {
+    display: block; /* Ensure labels are on a new line */
+    margin-bottom: 5px;
+    text-align: left; /* Align questions to the left */
+  }
+  
+  .submit {
+    background-color: #afd06e;
+  
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    float: center; /* Align Submit button to the right */
+  }
+  
+  .submit:hover {
+    /* Darker green on hover */
+    background-color: #437118;
+  }
+  
+  button {
+    /* Blue */
+    background-color: #87aece; /* Darker blue on hover */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button.previous {
+    float: left; /* Align Previous button to the left */
+  }
+  
+  button:hover {
+    background-color: #1d2a62;
+  }
+  

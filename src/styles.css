@@ -1,0 +1,109 @@
+/* styles.css */
+.app {
+    text-align: center;
+  }
+  
+  .center-image {
+    margin-bottom: 20px;
+    margin-top:70px;
+  }
+  
+  .center-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Carousel container */
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    margin-top:50px;
+  }
+  
+  /* Carousel image */
+  .carousel-image {
+    max-width: 300px;
+    max-height: 300px;
+    /*float*/
+    display: block;
+    transition: transform 0.3s; 
+  }
+  .carousel  :hover{
+    transform: scale(1.1);
+  }
+  /* Carousel buttons */
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  .faq-container {
+    margin-top: 20px;
+    text-align: left;
+  }
+  .faq-heading {
+    text-align: center; /* Center the heading */
+    font-size: 36px; /* Set the font size */
+  }
+  .faq {
+    margin-bottom: 10px;
+    width: 70%;
+    padding-left: 200px;
+  }
+  .question {
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #F5F3D8; /* Add border to create a box */
+    padding: 10px; /* Add padding for spacing */
+    margin-bottom: 5px; /* Add margin to separate questions */
+    color: #437118; 
+    padding-left: 30px; 
+  }
+  
+  .question:hover {
+    color: rgb(38, 38, 56);
+    border-color: #92C3A4; /* Change border color on hover */
+  }
+  
+  .question.active {
+    color: #92C3A4;
+    border-color: #92C3A4; /* Change border color when active */
+  }
+  .answer {
+    background-color:#F5F3D8 ;
+    margin-top: 10px;
+    padding: 10px; 
+    padding-left: 30px;/* Add padding to the answer */
+  }
+  /* styles.css */
+  
+  /* Fade-in effect */
+  .fade-in {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+  }
+  
+  .fade-in.active {
+    opacity: 1;
+  }
+  

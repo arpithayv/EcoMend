@@ -1,0 +1,60 @@
+.carousel-container {
+    position: relative;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .carousel-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflowing images */
+  }
+  
+  .carousel-image {
+    width: 100%; /* Ensure images take full width of container */
+    max-height: 400px; /* Set maximum height for images */
+    transition: transform 0.5s ease; /* Smooth transition for sliding effect */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover container */
+  }
+  
+  .carousel-image.active {
+    transform: translateX(0); /* Move active image to center */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .carousel-button.prev {
+    left: 0;
+  }
+  
+  .carousel-button.next {
+    right: 0;
+  }
+  
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken button on hover */
+  }
+  
+  .carousel-image:hover {
+    opacity: 0.8; /* Reduce opacity of image on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  

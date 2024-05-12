@@ -1,12 +1,11 @@
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './components/Home';
-import Projects from './components/Projects';
 import AppBar from './components/AppBar';
 import { ethers } from 'ethers';
+import ProjectGallery from './PhotoGallery.jsx';
+import CreateProject from './CreateProject.jsx';
 import './App.css'
+import ParentComponent from './ParentComponent.jsx';
 
 function App() {
 
@@ -34,8 +33,9 @@ function App() {
     <AppBar signer={signer} setSigner={setSigner} isWalletConnected={isWalletConnected}/>
     <BrowserRouter>
       <Routes>
-        <Route path={'/'} element={<Home/>}/>
-        <Route path={'/projects'} element={<Projects/>}/>
+        <Route path={'/'} element={<ParentComponent/>}/>
+        <Route path={'/projects'} element={<ProjectGallery/>}/>
+        <Route path={'/create-project'} element={<CreateProject/>}/>
       </Routes>
     </BrowserRouter> 
   </div>

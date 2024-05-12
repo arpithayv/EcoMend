@@ -1,0 +1,71 @@
+.heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .contar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* or any other value you prefer */
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+  
+  .container {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each container as needed */
+    margin: 10px; /* Adjust as needed */
+  }
+  
+  .box {
+    background-color: #f0f0f0; /* Add any background color you prefer */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+  }
+  
+  .icon {
+    font-size: 40px; /* Adjust icon size as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .box-heading {
+    font-size: 24px; /* Adjust heading size as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  .description {
+    font-size: 16px; /* Adjust description size as needed */
+    color: #666; /* Adjust description color as needed */
+  }
+  
+  .box {
+    width: 300px;
+    background-color: #d5eea2a6;
+    margin: 20px auto;
+    padding: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  .box:hover {
+    background-color: #d2ef99a6; /* Change background color on hover */
+  }
+  
+  .icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #1d2a62;
+  }
+  
+  .box-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1d2a62;
+  }
+  
+  .description {
+    font-size: 16px;
+    color: #1d2a62;
+  }
+  .anything {
+    display: flex;
+  }
+  
